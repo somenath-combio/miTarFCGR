@@ -73,7 +73,7 @@ The training script uses the following default parameters:
 - **Batch size**: 64
 - **Learning rate**: 0.003
 - **Dropout rate**: 0.1
-- **Number of epochs**: 50
+- **Number of epochs**: 100
 - **Loss function**: CrossEntropyLoss
 - **Optimizer**: Adam
 - **Mixed Precision**: Enabled (for faster GPU training)
@@ -90,7 +90,7 @@ K = 6                      # K-mer size for FCGR
 BATCH_SIZE = 64            # Batch size for training
 LEARNING_RATE = 0.003      # Learning rate
 DROPOUT_RATE = 0.1         # Dropout rate
-NUM_EPOCHS = 50            # Number of training epochs
+NUM_EPOCHS = 100           # Number of training epochs
 MODEL_SAVE_PATH = "best_model.pth"  # Path to save the best model
 ```
 
@@ -139,7 +139,7 @@ During training, the script will:
 
 Example output:
 ```
-Epoch [1/50]
+Epoch [1/100]
 ----------------------------------------
 Batch [10/100], Loss: 0.6234
 ...
