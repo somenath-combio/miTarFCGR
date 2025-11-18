@@ -350,7 +350,7 @@ def validate(model: nn.Module, val_loader: DataLoader, criterion: nn.Module,
 
 
 def train_model(csv_path: str, k: int = 6, batch_size: int = 64, learning_rate: float = 0.003,
-                dropout_rate: float = 0.1, num_epochs: int = 50, model_save_path: str = "best_model.pth",
+                dropout_rate: float = 0.1, num_epochs: int = 100, model_save_path: str = "best_model.pth",
                 use_amp: bool = True):
     """
     Main training function with GPU support
@@ -499,7 +499,7 @@ if __name__ == "__main__":
     BATCH_SIZE = 64
     LEARNING_RATE = 0.003
     DROPOUT_RATE = 0.1
-    NUM_EPOCHS = 50
+    NUM_EPOCHS = 100
     MODEL_SAVE_PATH = "best_model.pth"
     USE_AMP = True  # Use Automatic Mixed Precision for faster GPU training
 
